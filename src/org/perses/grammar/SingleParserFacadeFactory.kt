@@ -22,6 +22,8 @@ import org.perses.grammar.c.LanguageC
 import org.perses.grammar.c.PnfCParserFacade
 import org.perses.grammar.cpp.LanguageCpp
 import org.perses.grammar.cpp.PnfCppParserFacade
+import org.perses.grammar.dafny.LanguageDafny
+import org.perses.grammar.dafny.DafnyParserFacade
 import org.perses.grammar.go.LanguageGo
 import org.perses.grammar.go.PnfGoParserFacade
 import org.perses.grammar.java.JavaParserFacade
@@ -114,6 +116,7 @@ class SingleParserFacadeFactory private constructor(
       builder.add(LanguageSQLite, { SQLiteParserFacade() }, customizer)
       builder.add(LanguagePython3, { Python3ParserFacade() }, customizer)
       builder.add(LanguageRuby, { PnfRubyParserFacade() }, customizer)
+      builder.add(LanguageDafny, { DafnyParserFacade() }, customizer)
       return builder
     }
 

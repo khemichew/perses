@@ -55,6 +55,7 @@ kt_jvm_library(
         "//src/org/perses/grammar/c:parser_facade",
         "//src/org/perses/grammar/cpp:parser_facade",
         "//src/org/perses/grammar/go:parser_facade",
+        "//src/org/perses/grammar/dafny:parser_facade",
         "//src/org/perses/grammar/java:parser_facade",
         "//src/org/perses/grammar/javascript:parser_facade",
         "//src/org/perses/grammar/php:parser_facade",
